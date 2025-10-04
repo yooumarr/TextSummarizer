@@ -1,6 +1,6 @@
 # TextSummarizer
 
-A simple Flask web app that summarizes text locally using LangChain and Hugging Face Transformers — no API keys or online model hosting required.
+A simple Flask web app that summarizes text locally using LangChain and Hugging Face Transformers.
 
 ##  Setup Instructions
 
@@ -21,3 +21,11 @@ A simple Flask web app that summarizes text locally using LangChain and Hugging 
 5. **Open in browser**
    ```bash
    http://127.0.0.1:5000
+
+## How It Works
+
+Loads a summarization model (facebook/bart-large-cnn) locally using Hugging Face Transformers.
+
+Wraps it inside LangChain’s HuggingFacePipeline.
+
+Flask provides a lightweight UI to input text and display the summary.
