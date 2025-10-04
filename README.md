@@ -6,7 +6,7 @@ A simple Flask web app that summarizes text locally using LangChain and Hugging 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-username>/TextSummarizer.git
+   git clone https://github.com/<yooumarr>/TextSummarizer.git
    cd TextSummarizer
 2. **Create and activate Conda environment**
    ```bash
