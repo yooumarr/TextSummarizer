@@ -1,0 +1,28 @@
+1. Installed conda and python 3.10.18 with it.
+
+2. Set up hugginfaceapi token and used HuggingFaceEndpoint to have a inference endpoint. 
+
+3. Faced issues in inference using a token so I switched t using pipeline from transformers and then wrapping it up in HuggingFacePipeline
+
+4. I am using facebook/bart-large-cnn' to summarize my texts. 
+
+5. Using HuggingFacePipeline I've built a pipeline that will use the model and kind of wrap it with a wrapper provided by HuggingFacePipeline to make it LangChain compatible.
+
+Model Performance:
+Input: It’s not obvious that gravity should be related to space and time, let
+alone that seeking to describe it in a scientific theory might lead one to
+contemplate the beginning and end of time. Black holes take centre stage in
+exploring this deep relationship because they are gravity’s most extreme
+observable creations. They are so intellectually troublesome that well into
+the 1960s many physicists felt that while black holes are a feature of the
+mathematics of general relativity, Nature would surely find a way to avoid
+creating them. Einstein himself wrote a paper in 1939 in which he
+concluded that black holes ‘do not exist in physical reality’.2 Einstein’s
+illustrious contemporary Arthur Eddington put it in rather pithier terms:
+‘There should be a law of Nature to prevent a star from behaving in this
+absurd way.’ Well, there isn’t, and they do.
+
+Output: Black holes are gravity’s most extremeobservable creations. They are so intellectually troublesome that well intothe 1960s many physicists felt that while black holes are a feature of themathematics of general relativity, Nature would surely find a way to avoidcreating them. Einstein himself wrote a paper in 1939 in which he concluded that black holes ‘do not exist in physical reality’
+
+6. Next, I will use Flask to create a basic web app to accomplish the same summarization feature but through a UI.
+7. The Flask UI is working fine and the model outputs the summary correctly.
